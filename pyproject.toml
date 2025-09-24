@@ -1,0 +1,17 @@
+[project]
+name = "news-roundup"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "django>=5.2.6",
+    "python-dotenv>=1.0.1",
+    "openai>=1.51.2",
+    "playwright>=1.48.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.13.1",
+]
