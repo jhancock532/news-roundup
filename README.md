@@ -8,7 +8,7 @@ You can then choose to improve the efficiency of the crawler, or expand it to re
 
 ## Resources
 
-This `news-roundup` folder contains a basic implementation of a Node based web crawler that uses AI to extract news articles, found in `crawler.js`. 
+This folder contains a basic implementation of a Node based web crawler that uses AI to extract news articles, found in `crawler.js`. 
 
 There's some additional resources related to stretch goals - a prompt for trying out Agent mode in `docs/example-prompt.md` and some information about our client's news pages in `data/torchbox-clients.json`.
 
@@ -34,7 +34,7 @@ There's some additional resources related to stretch goals - a prompt for trying
 
 ## Getting started
 
-Copy the contents of `news-roundup` to a new repository, and share this repo with members of your team.
+Create a copy of this repo and share it with the members of your team.
 
 Create a new [OpenAI API key](https://platform.openai.com/api-keys) and share it with the team securely via Bitwarden Send.
 
