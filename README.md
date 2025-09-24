@@ -59,3 +59,24 @@ npm start
 ```
 
 You can remove the comments from the `crawler.js` file `CHARITY_NEWS_WEBSITES` array to do a full news roundup.
+
+## Running with Python/uv
+
+A Python version of the crawler is also available as `crawler.py`. To run it using [uv](https://docs.astral.sh/uv/):
+
+1. Install uv if you haven't already:
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+
+2. Add your OpenAI API key to `.env` (same as Node.js setup)
+
+3. Install Playwright browsers:
+   ```bash
+   uv run --with playwright python -m playwright install
+   ```
+
+4. Run the Python crawler:
+   ```bash
+   uv run crawler.py
+   ```
