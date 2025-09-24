@@ -1,0 +1,92 @@
+[
+  {
+    "name": "ActionAid UK",
+    "homepage": "https://www.actionaid.org.uk",
+    "news": "https://www.actionaid.org.uk/latest-news/uk",
+    "blog": "https://www.actionaid.org.uk/blog"
+  },
+  {
+    "name": "Action for Children",
+    "homepage": "https://www.actionforchildren.org.uk",
+    "news": "https://www.actionforchildren.org.uk/news-and-stories/",
+    "blog": "https://www.actionforchildren.org.uk/blog/"
+  },
+  {
+    "name": "Art Fund",
+    "homepage": "https://www.artfund.org",
+    "news": "https://www.artfund.org/our-purpose/news",
+    "blog": null
+  },
+  {
+    "name": "Barts Charity",
+    "homepage": "https://www.bartscharity.org.uk",
+    "news": "https://www.bartscharity.org.uk/our-news-stories/",
+    "blog": null
+  },
+  {
+    "name": "Breast Cancer Now",
+    "homepage": "https://breastcancernow.org/",
+    "news": "https://breastcancernow.org/about-us/media/press-releases",
+    "blog": "https://breastcancernow.org/about-us/blogs"
+  },
+  {
+    "name": "British Medical Association (BMA)",
+    "homepage": "https://www.bma.org.uk",
+    "news": "https://www.bma.org.uk/news-and-opinion",
+    "blog": "https://www.bma.org.uk/news-and-opinion"
+  },
+  {
+    "name": "Charities Aid Foundation",
+    "homepage": "https://www.cafonline.org/",
+    "news": "https://www.cafonline.org/about-us/press-office",
+    "blog": "https://www.cafonline.org/insights/blog"
+  },
+  {
+    "name": "Chatham House",
+    "homepage": "https://www.chathamhouse.org",
+    "news": "https://www.chathamhouse.org/about-us/our-departments-and-programmes/communications-and-publishing-department/press-office",
+    "blog": "https://medium.com/chatham-house"
+  },
+  {
+    "name": "Child Bereavement UK",
+    "homepage": "https://www.childbereavementuk.org/",
+    "news": "https://www.childbereavementuk.org/Listing/Category/press-releases",
+    "blog": "https://www.childbereavementuk.org/blogs/blog"
+  },
+  {
+    "name": "Citizens UK",
+    "homepage": "https://www.citizensuk.org",
+    "news": "https://www.citizensuk.org/about-us/news/",
+    "blog": null
+  },
+  {
+    "name": "Crisis UK",
+    "homepage": "https://www.crisis.org.uk/",
+    "news": "https://www.crisis.org.uk/about-us/latest-news/",
+    "blog": "https://www.crisis.org.uk/about-us/crisis-blog/"
+  },
+  {
+    "name": "Disasters Emergency Committee (DEC)",
+    "homepage": "https://www.dec.org.uk/",
+    "news": "https://www.dec.org.uk/dec-media-centre",
+    "blog": null
+  },
+  {
+    "name": "Diabetes UK",
+    "homepage": "https://www.diabetes.org.uk/",
+    "news": "https://www.diabetes.org.uk/about-us/news-and-views",
+    "blog": null
+  },
+  {
+    "name": "Drinkaware",
+    "homepage": "https://www.drinkaware.co.uk/",
+    "news": "https://www.drinkaware.co.uk/news",
+    "blog": null
+  },
+  {
+    "name": "Epilepsy Society",
+    "homepage": "https://epilepsysociety.org.uk/",
+    "news": "https://epilepsysociety.org.uk/latest/news",
+    "blog": "https://epilepsysociety.org.uk/latest/blogs"
+  }
+]

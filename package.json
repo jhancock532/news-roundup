@@ -1,0 +1,17 @@
+{
+  "name": "news-roundup",
+  "version": "1.0.0",
+  "description": "AI-powered news crawler and summarizer for charity sector",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node crawler.js"
+  },
+  "dependencies": {
+    "cheerio": "1.1.2",
+    "crawlee": "3.14.1",
+    "dotenv": "17.2.2",
+    "openai": "5.20.0",
+    "puppeteer": "24.19.0"
+  }
+}
