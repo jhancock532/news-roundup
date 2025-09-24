@@ -1,33 +1,26 @@
-# /// script
-# requires-python = ">=3.8"
-# dependencies = [
-#     "python-dotenv>=1.0.1",
-#     "openai>=1.51.2",
-#     "playwright>=1.48.0",
-# ]
-# ///
-
 import os
 import json
 import asyncio
+import logging
 from datetime import datetime, timedelta
 from pathlib import Path
 import sys
 
+import llm
 from dotenv import load_dotenv
 from openai import OpenAI
 from playwright.async_api import async_playwright
 
+logger = logging.getLogger(__name__)
+
 # Load environment variables
 load_dotenv()
 
-if not os.getenv('OPENAI_API_KEY'):
-    print('❌ OPENAI_API_KEY environment variable is required')
-    sys.exit(1)
+LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o-mini")
+logger.debug("Using LLM model %s", LLM_MODEL)
 
-openai = OpenAI(
-    api_key=os.getenv('OPENAI_API_KEY')
-)
+
+model = llm.get_model(LLM_MODEL)
 
 # To save on API costs, I've commented out additional sites while you run
 # initial tests. Uncomment these sites to do a full run of the news audit.
@@ -150,16 +143,11 @@ Only include articles that are clearly from the last 7 days. If you can't determ
     # Todo: experiment with different models and monitor token input / output usage
 
     try:
-        response = openai.chat.completions.create(
-            model='gpt-5-nano',
-            messages=[
-                {'role': 'system', 'content': system_prompt},
-                {'role': 'user', 'content': user_prompt}
-            ],
-            response_format={'type': 'json_object'}
+        response = model.prompt(
+            user_prompt,
+            system_prompt=system_prompt
         )
-
-        content = response.choices[0].message.content if response.choices else None
+        content = response.text()
         if not content:
             print(f'⚠️ No response from AI for {page_url}')
             return []
